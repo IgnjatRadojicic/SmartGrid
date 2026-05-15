@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Client/Client.csproj" Id="80d73eb2-8e1c-4e58-bb8e-afb5d6936b1f" />
+  <Project Path="Contracts/Contracts.csproj" Id="78cd1f9a-a1e9-41ef-b1dd-bb0380b6a809" />
+  <Project Path="Core/Core.csproj" Id="eab1654a-4566-41e5-a86c-24f18e64c181" />
+  <Project Path="Data/Data.csproj" Id="8be9368d-b7c1-409c-9c9e-d269c1655996" />
+  <Project Path="Service/Service.csproj" Id="8fcdaa5c-535a-4caa-928d-fb9009356194" />
+</Solution>
