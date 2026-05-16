@@ -19,7 +19,7 @@ namespace Data.Readers
         public CsvDataReader(string filePath)
         {
             if (!File.Exists(filePath))
-                throw new FileNotFoundException("CSV fajl nije pronadjen: " + filePath);
+                throw new FileNotFoundException("CSV fajl nije pro  nadjen: " + filePath);
 
             _filePath = filePath;
             _fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
