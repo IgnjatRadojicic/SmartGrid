@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,17 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analysis\ConsumptionPredictor.cs" />
+    <Compile Include="Analysis\FrequencyChangeDetector.cs" />
+    <Compile Include="Events\PowerOverloadDetector.cs" />
     <Compile Include="Events\AnomalyEventArgs.cs" />
     <Compile Include="Events\FaultEventArgs.cs" />
     <Compile Include="Events\GridEventManager.cs" />
     <Compile Include="Events\ThresholdEventArgs.cs" />
+    <Compile Include="ExternalApi\OpenWeatherClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj">
       <Project>{78cd1f9a-a1e9-41ef-b1dd-bb0380b6a809}</Project>
       <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{8be9368d-b7c1-409c-9c9e-d269c1655996}</Project>
+      <Name>Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
