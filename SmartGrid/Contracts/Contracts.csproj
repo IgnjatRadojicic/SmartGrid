@@ -45,14 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\AnomalyResultDto.cs" />
-    <Compile Include="DTOs\CarbonIntensityDto.cs" />
     <Compile Include="DTOs\ConsumptionForecastDto.cs" />
     <Compile Include="DTOs\GridReadingDto.cs" />
     <Compile Include="DTOs\NodeStatusDto.cs" />
     <Compile Include="DTOs\NotificationDto.cs" />
     <Compile Include="DTOs\StabilityReportDto.cs" />
+    <Compile Include="DTOs\WeatherCorrelationDto.cs" />
     <Compile Include="DTOs\WeatherDataDto.cs" />
-    <Compile Include="Intefaces\ICarbonService.cs" />
     <Compile Include="Intefaces\IGridAnalysisService.cs" />
     <Compile Include="Intefaces\IWeatherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

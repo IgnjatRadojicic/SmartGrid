@@ -11,7 +11,7 @@ namespace Contracts.Interfaces
         [OperationContract]
         [WebGet(UriTemplate = "/readings?page={page}&pageSize={pageSize}",
                 ResponseFormat = WebMessageFormat.Json)]
-        List<GridReadingDto> GetReadings(int page, int pageSize);
+        List<GridReadingDto> GetReadings(string page, string pageSize);
 
         [OperationContract]
         [WebGet(UriTemplate = "/readings/{id}",
@@ -24,9 +24,19 @@ namespace Contracts.Interfaces
         StabilityReportDto GetStabilityReport();
 
         [OperationContract]
-        [WebGet(UriTemplate = "/anomalies?freqThreshold={freqThreshold}&powerThreshold={powerThreshold}",
+        [WebGet(UriTemplate = "/anomalies/frequency?threshold={threshold}",
                 ResponseFormat = WebMessageFormat.Json)]
-        List<AnomalyResultDto> DetectAnomalies(string freqThreshold, string powerThreshold);
+        List<AnomalyResultDto> DetectFrequencyAnomalies(string threshold);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/anomalies/power?threshold={threshold}",
+                ResponseFormat = WebMessageFormat.Json)]
+        List<AnomalyResultDto> DetectPowerOverloads(string threshold);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/anomalies/zscore?threshold={threshold}",
+                ResponseFormat = WebMessageFormat.Json)]
+        List<AnomalyResultDto> DetectZScoreAnomalies(string threshold);
 
         [OperationContract]
         [WebGet(UriTemplate = "/nodes",

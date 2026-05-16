@@ -17,5 +17,10 @@ namespace Contracts.Interfaces
         [WebGet(UriTemplate = "/all",
                 ResponseFormat = WebMessageFormat.Json)]
         List<WeatherDataDto> GetWeatherForAllNodes();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/correlation",
+                ResponseFormat = WebMessageFormat.Json)]
+        WeatherCorrelationDto GetWeatherCorrelation();
     }
 }
