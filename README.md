@@ -9,7 +9,8 @@ Sistem za pracenje i analizu stanja pametne elektroenergetske mreze (Smart Grid)
 
 ---
 
-<img width="1920" height="1080" alt="2026-05-17 23-26-52" src="https://github.com/user-attachments/assets/652eaa75-e3a1-4371-9dd1-8fbd1fea1ed8" />
+<img width="800" height="450" alt="ezgif-6ac44770a6618e96" src="https://github.com/user-attachments/assets/b79503d2-592b-425a-8112-c97ef031740e" />
+
 
 
 ## Pregled sistema
