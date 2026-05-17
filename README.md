@@ -9,6 +9,9 @@ Sistem za pracenje i analizu stanja pametne elektroenergetske mreze (Smart Grid)
 
 ---
 
+<img width="1920" height="1080" alt="2026-05-17 23-26-52" src="https://github.com/user-attachments/assets/652eaa75-e3a1-4371-9dd1-8fbd1fea1ed8" />
+
+
 ## Pregled sistema
 
 Projekat simulira monitoring pametne elektroenergetske mreze Srbije sa 4 node-a: jednom elektranom (TE Nikola Tesla, Obrenovac) i tri potrosacka grada (Beograd, Novi Sad, Nis). Sistem ucitava dataset od 1000 vremenskih merenja, detektuje anomalije u frekvenciji i snazi, korelira vremenske uslove sa potrosnjom, i sve prikazuje na interaktivnom dashboardu sa Leaflet mapom.
